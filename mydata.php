@@ -58,13 +58,13 @@ class MyData{
 
 	/*
 	#--------------------------------------------------------------------------------------------
-	# Função agora
+	# Função formataData
 	#--------------------------------------------------------------------------------------------
 	# Parâmetros:
 	# $formato: segue o padrão do parâmetro format da função date() padrão do PHP (vide manual [http://php.net/manual/pt_BR/function.date.php]).
 	# $data: (opcional) unix time stamp -> use a função strtotime. se omitido, será usada a data atual
 	#      ex.: $data=new MyData();
-    #           echo $data->agora('l, d \d\e F \d\e Y', strtotime('2010-10-04'));
+    #           echo $data->formataData('l, d \d\e F \d\e Y', strtotime('2010-10-04'));
     #           Retorno: Segunda Feira, 04 de Outubro de 2010
     #
     # Retorno:
