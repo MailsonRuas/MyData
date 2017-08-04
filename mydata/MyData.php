@@ -1,7 +1,7 @@
 <?php
 /*
 #------------------------------------------------------------------------------+
-# MyData 1.0                                                                   |
+# MyData 1.1                                                                   |
 #------------------------------------------------------------------------------+
 # PHP >= 5.5.0, PHP 7
 #
@@ -122,13 +122,11 @@ class MyData{
 		}
 
 		$semanas=floor($diferenca/self::SEMANA);
-		$dias=floor($diferenca/self::DIA);
+		$dias=floor(($diferenca%self::SEMANA)/self::DIA);
 		$horas=floor(($diferenca%self::DIA)/self::HORA);
 		$minutos=floor(($diferenca%self::HORA)/self::MINUTO);
 		$segundos=$diferenca%self::MINUTO;
 
 		return array('semanas'=>(int)$semanas,'dias'=>(int)$dias,'horas'=>(int)$horas,'minutos'=>(int)$minutos,'segundos'=>$segundos,'passado'=>$passado);
 	}
-
-	public function calculaData(){}
 }
