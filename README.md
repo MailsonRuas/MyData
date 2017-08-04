@@ -1,6 +1,8 @@
 # MyData
 
-# Função formataData
+Classe PHP com funções que auxiliam na exibição de datas em português brasileiro (PT-BR) e calcular quanto tempo tem entre duas datas.
+
+### Função formataData
 <pre>
 Parâmetros:<br>
  $formato: segue o padrão do parâmetro format da função date() padrão do PHP<br>
@@ -13,7 +15,7 @@ Retorno:<br>
  string com a data formatada<br>
 </pre>
 
-# Função diferença
+### Função diferença
 <pre>
 Parâmetros:
 	$data1: unix time stamp -> use a função strtotime
@@ -28,3 +30,7 @@ Retorno:
 	    'passado'=>false //boolean - indica se a data informada no primeiro parametro já passou em relação ao segundo parâmetro, ou em relação a data atual caso o segundo parâmetro seja omitido - true se a data já tiver passado, e false caso contrário
 	)
 </pre>
+
+> O meu objetivo com esse projeto, é colocar em prática algumas coisas que estou estudando
+
+
