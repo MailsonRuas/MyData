@@ -1,7 +1,7 @@
 <?php
 /*
 #------------------------------------------------------------------------------+
-# Exemplos de uso - MyData                                                     |
+# Exemplos de uso - MyDate                                                     |
 #------------------------------------------------------------------------------+
 # PHP >= 5.5.0, PHP 7
 #
@@ -27,7 +27,7 @@
 #------------------------------------------------------------------------------+
 # adicional                                                                    |
 #------------------------------------------------------------------------------+
-# As funções de formatação de datas da classe MyData aceita como parâmetro, todos os caracteres de formato
+# As funções de formatação de datas da classe MyDate aceita como parâmetro, todos os caracteres de formato
 # da função date() da biblioteca padrão do PHP, com um adicional, o caracter k (minúsculo).
 # k: nome completo do dia da semana sem a palavra "feira".
 #    E.: Segunda, Terça, Quarta, Quinta, Sexta, Sábado, Domingo
@@ -51,8 +51,8 @@
 	</head>
 	<body>
 		<?php
-			require_once '../mydata/MyData.php';
-			$data=new MyData();//instancia de um objeto da classe MyData
+			require_once '../mydate/MyDate.php';
+			$data=new MyDate();//instancia de um objeto da classe MyDate
 
 			// Exemplos de uso
 

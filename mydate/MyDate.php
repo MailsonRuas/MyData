@@ -1,7 +1,7 @@
 <?php
 /*
 #------------------------------------------------------------------------------+
-# MyData 1.1                                                                   |
+# MyDate 1.1                                                                   |
 #------------------------------------------------------------------------------+
 # PHP >= 5.5.0, PHP 7
 #
@@ -27,13 +27,13 @@
 #------------------------------------------------------------------------------+
 # adicional                                                                    |
 #------------------------------------------------------------------------------+
-# As funções de formatação de datas da classe MyData aceita como parâmetro, todos os caracteres de formato
+# As funções de formatação de datas da classe MyDate aceita como parâmetro, todos os caracteres de formato
 # da função date() da biblioteca padrão do PHP, com um adicional, o caracter k (minúsculo).
 # k: nome completo do dia da semana sem a palavra "feira".
 #    E.: Segunda, Terça, Quarta, Quinta, Sexta, Sábado, Domingo
 #
 */
-class MyData{
+class MyDate{
 	//unidades fixas | o mes e o ano variam
 	const MINUTO=60;
 	const HORA=3600;
@@ -63,7 +63,7 @@ class MyData{
 	# Parâmetros:
 	# $formato: segue o padrão do parâmetro format da função date() padrão do PHP (vide manual [http://php.net/manual/pt_BR/function.date.php]).
 	# $data: (opcional) unix time stamp -> use a função strtotime. se omitido, será usada a data atual
-	#      ex.: $data=new MyData();
+	#      ex.: $data=new MyDate();
     #           echo $data->formataData('l, d \d\e F \d\e Y', strtotime('2010-10-04'));
     #           Retorno: Segunda Feira, 04 de Outubro de 2010
     #
